@@ -1,0 +1,330 @@
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #f9fafb;
+  scroll-behavior: smooth;
+}
+#btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #01021a;
+  padding: 4px 20px;
+  position: fixed;
+  z-index: 999;
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+.navbar a:hover {
+  color: #7c3aed;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 100px 20px 20px 20px;
+}
+.content h1 {
+  color: #01021a;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.content p {
+  color: #333333;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 34px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(124, 58, 237, 0.6);
+}
+.hero_image {
+  position: relative;
+  width: 500px;
+}
+.hero_image img {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  z-index: 2;
+}
+.circle_bg {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 0 0 40px #7c3aed;
+  overflow: hidden;
+}
+.Services {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: radial-gradient(circle at top, #01022d 20%, black);
+  border-radius: 20px;
+}
+.services_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.section_title {
+  font-size: 36px;
+  color: #f9fafb;
+  margin-top: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.service_box {
+  margin-top: 150px;
+  width: 300px;
+  height: 200px;
+  background:rgba(255, 255, 255, 0.06) ;
+  border: 1px solid #7c3aed;
+  padding: 4px 20px;
+  box-shadow: 0 0 15px #f9fafb;
+  border-radius: 12px;
+  transition: 0.5s ease;
+}
+.service_box:hover {
+  box-shadow: 0 0 30px #7c3aed;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.title {
+  color: #f9fafb;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+.service_box p {
+  margin-top: 25px;
+  max-width: 250px;
+  color: #f9fafb;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+.icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 15px;
+  color: #7c3aed;
+}
+.me {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.Why_Choose_Me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.box {
+  margin-top: 150px;
+  width: 300px;
+  height: 200px;
+  background:#0f172a;
+  border: 1px solid #7c3aed;
+  box-shadow: 0 0 30px #1e1e2f;
+  border-radius: 12px;
+  transition: 0.5s ease;
+  padding: 4px 20px;
+}
+.box:hover {
+  box-shadow: 0 0 30px #7c3aed;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.box p {
+  max-width: 250px;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  align-items: center;
+  background-color: black;
+  padding: 4px 20px;
+  z-index: 999;
+}
+footer p {
+  color: white;
+  font-size: 16px;
+}
+.me .section_title {
+  color: #01021a;
+}
+
+.navbar .btn {
+  display: inline-flex;
+  align-items: center;
+  margin:2px 0;
+  padding: 10px 34px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.navbar .btn:hover {
+  color: white;
+}
+.contact-section {
+  min-height: 89vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(circle at top, #01022d 20%, black);
+  padding: 20px;
+  flex-direction: column;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 50px 35px;
+  max-width: 520px;
+  text-align: center;
+  box-shadow: 0 0 15px #f9fafb;
+}
+
+.contact-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.contact-text {
+  color: #cbd5f5;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 34px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(124, 58, 237, 0.6);
+}
+
+.contact-note {
+  display: block;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-card {
+  animation: fadeUp 1s ease forwards;
+}
